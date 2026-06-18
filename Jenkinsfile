@@ -4,7 +4,7 @@ pipeline{
 	maven 'Maven'}
 	stages{
 		stage('Checkout'){
-		steps{ git branch: 'master' ,url :''}
+		steps{ git branch: 'master' ,url :'https://github.com/fluffy-panda07/SelApp.git'}
 		}
 		stage('Build'){
 		steps{ sh 'mvn clean package'}
